@@ -12,7 +12,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import VatTu from "./features/ChiNhanh/VatTu/VatTu";
 
 // import BanHang from "./features/ChiNhanh/BANHANG/navbargiohang";
-import User from "./features/ChiNhanh/User/User";
+// import User from "./features/ChiNhanh/User/User";
+import Username from "./features/ChiNhanh/User/username";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
           path="/User"
           element={
             <Home>
-              <User />
+              <Username />
             </Home>
           }
         ></Route>

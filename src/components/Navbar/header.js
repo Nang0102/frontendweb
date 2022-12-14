@@ -102,7 +102,7 @@ const header = () => {
               return (
                 <li key={index} className={item.cName}>
                   <Link to={item.path}>
-                    <div style={{ marginLeft: "-90px" }}>
+                    <div>
                       {item.icon}
                       <span>{item.title}</span>
                     </div>

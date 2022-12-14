@@ -53,7 +53,6 @@ function Username() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [avatar, setAvatar] = useState("");
-  // const [id1, setId1] = useState("");
   const [id, setId] = useState("");
 
   const GetUser = async () => {
@@ -96,20 +95,20 @@ function Username() {
   };
   const columns = [
     {
-      name: <div style={{ fontSize: "18px" }}>Username </div>,
+      name: <div style={{ fontSize: "20px" }}>Username </div>,
       selector: (row) => row.username,
     },
     {
-      name: <div style={{ fontSize: "18px" }}>Email</div>,
+      name: <div style={{ fontSize: "20px" }}>Email</div>,
       selector: (row) => row.email,
     },
     {
-      name: <div style={{ fontSize: "18px" }}>Avatar</div>,
+      name: <div style={{ fontSize: "20px" }}>Avatar</div>,
       selector: (row) => row.avatar,
     },
 
     {
-      name: <div style={{ fontSize: "18px" }}>Actions </div>,
+      name: <div style={{ fontSize: "20px" }}>Actions </div>,
 
       cell: (row) => {
         return (
@@ -150,8 +149,8 @@ function Username() {
   ];
 
   return (
-    <div>
-      {/* <h1>Username</h1> */}
+    <div style={{ marginLeft: "260px" }}>
+      <h1>User</h1>
 
       <DataTable
         columns={columns}
